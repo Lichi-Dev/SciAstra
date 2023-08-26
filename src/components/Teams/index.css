@@ -1,0 +1,51 @@
+.teams-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-heading {
+  font-weight: 700;
+  background: -webkit-linear-gradient(360deg, #234eb0 5%, #9010b0 100%);
+  background: linear-gradient(360deg, #234eb0 5%, #9010b0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  font-size: 3rem;
+}
+.college-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.college-box {
+  width: 300px;
+  height: 300px;
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  background: #ffffff;
+  box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+  margin-right: 20px;
+  margin-top: 20px;
+  padding: 20px;
+}
+.college-heading {
+  padding-top: 10px;
+  width: 73vw;
+  font-size: 30px;
+  font-weight: 600;
+  margin: auto;
+  text-align: center;
+}
+.etc-heading {
+  width: 620px;
+  margin-right: 20px;
+  padding: 20px;
+}
