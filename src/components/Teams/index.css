@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 10px;
 }
 .main-heading {
   font-weight: 700;
@@ -14,6 +15,10 @@
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
   font-size: 3rem;
+}
+.sub-heading {
+  font-size: 30px;
+  font-weight: 600;
 }
 .college-container {
   display: flex;
@@ -32,20 +37,133 @@
   border-radius: 50px;
   background: #ffffff;
   box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
-  margin-right: 20px;
   margin-top: 20px;
+  margin: 10px;
   padding: 20px;
 }
 .college-heading {
   padding-top: 10px;
-  width: 73vw;
   font-size: 30px;
   font-weight: 600;
   margin: auto;
   text-align: center;
 }
-.etc-heading {
-  width: 620px;
-  margin-right: 20px;
-  padding: 20px;
+.mentor-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.mentor-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  width: 300px;
+}
+.mentor-image {
+  object-fit: fill;
+  width: 90px;
+}
+.mentor-name {
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 15px;
+  text-align: center;
+}
+.mentor-college {
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 15px;
+  text-align: center;
+}
+.advisor-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+}
+.advisor-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  width: 300px;
+}
+.mentor-button {
+  position: relative;
+  border-radius: 18px;
+  width: 100%;
+  display: inline-block;
+  font-size: 20px;
+  padding: 1px;
+  text-decoration: none;
+  text-align: center;
+  background: linear-gradient(90.23deg, #234eb0 2.75%, #b656e2 104.73%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin-top: 60px;
+}
+.mentor-button::before {
+  content: "";
+  top: -3px;
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  left: -1px;
+  border-radius: 30px;
+  background: linear-gradient(90.23deg, #234eb0 2.75%, #b656e2 104.73%);
+  z-index: -10;
+}
+.mentor-button::after {
+  content: "";
+  position: absolute;
+  width: 99%;
+  height: 45px;
+  border-radius: 30px;
+  background: white;
+  left: 1px;
+  z-index: -5;
+  top: -1px;
+}
+@media screen and (max-width: 767px) {
+  .hide {
+    display: none;
+  }
+  .college-box {
+    width: 200px;
+    height: 200px;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background: #ffffff;
+    box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+    margin-top: 20px;
+    margin: 10px;
+    padding: 20px;
+  }
+  .college-heading {
+    font-size: 20px;
+  }
+  .main-heading {
+    font-size: 2rem;
+  }
+  .sub-heading {
+    font-size: 16px;
+  }
+  .mentor-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    width: 180px;
+  }
 }
